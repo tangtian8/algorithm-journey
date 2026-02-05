@@ -220,9 +220,9 @@ public class SortTestRunner {
         List<SortAlgorithm> algorithms = new ArrayList<>();
 
         // 方式1: 无参数的排序算法 - 直接使用方法引用
-         algorithms.add(new SortAlgorithm("冒泡排序", BubbleSort::bubbleSortPractise4));
+         algorithms.add(new SortAlgorithm("冒泡排序", BubbleSort::bubbleSortPractise5));
         // algorithms.add(new SortAlgorithm("选择排序", SelectionSort::selectSort));
-//         algorithms.add(new SortAlgorithm("插入排序", InsertionSort::insertSortPractice3));
+//         algorithms.add(new SortAlgorithm("插入排序", InsertionSort::insertionSortPractice4));
 
         // 方式2: 有额外参数的排序算法 - 使用Lambda表达式包装
          //algorithms.add(new SortAlgorithm("快速排序", arr -> QuickSort.quickSort(arr, 0, arr.length - 1)));

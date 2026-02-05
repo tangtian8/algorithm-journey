@@ -101,39 +101,24 @@ public class BubbleSort {
 		}
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /**
+     * @param arr 待排序数组
+     */
+	public static void bubbleSortPractise5(int[] arr){
+		int len = arr.length;
+		for(int i = 0 ; i < len - 1; i++){
+			boolean swapped = false;
+			for(int j = 0; j < len - 1-i; j++){
+				if(arr[j] > arr[j+1]){
+					int temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+					swapped = true;
+				}
+			}
+			if(!swapped){
+				break;
+			}
+		}
+	}
 }
